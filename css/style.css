@@ -1,3 +1,8 @@
+body {
+    font-family: fantasy;
+    background-color: aliceblue;
+}
+
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -6,7 +11,7 @@
 .main-logo {
     height: 50px;
     width: 50px;
-    background-image: url();
+    background-image: url("../assets/LogoRevoU.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -14,10 +19,10 @@
 
 nav {
     display: flex;
-    align-items: center;
+        align-items: center
 }
 
-nav > a {
+nav.a {
     text-decoration: none;
     color: black;
     border: 1px solid;
@@ -25,20 +30,98 @@ nav > a {
 }
 
 .banner-img {
-    height: 300px;
-    background-image: url();
+    height: 400;
     background-size: cover;
     background-position: top;
 }
 
 main>section {
-    height: 800px;
+    height: 800;
 }
 
-.section-content {
+.section-conten {
     text-align: center;
 }
 
+/* Headquarter */
+.headquarter {
+    padding: 20px 0px;
+}
+.headquarter-kota {
+    margin:  40px 0px 20px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 0px 100px;
+}
+.bulat {
+    width: 25%;
+}
+.bulat img {
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0px auto 5px;
+}
+.bulat img:hover {
+    opacity: .8;
+}
+
+
+/* footer */
 footer {
-    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    border-top: 2px solid black;
+    font-size: 13px;
+    font-style: italic;
+    background-color: #fff;
+  }
+  footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-sosmed {
+    margin-top: 7px;
+  }
+  .footer-sosmed a {
+    margin: 0 15px;
+  }
+  .footer-sosmed a i:hover {
+    font-size: 30px;
+  }
+  footer .footer-program {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1em;
+  }
+
+
+
+@media only screen and (max-width: 480px) {
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-form {
+        width: 100%;
+    }
+    .main-form table {
+        width: 100%;
+    }
+    .main-pesan {
+        display: flex;
+        flex-direction: colum;
+    }
+    .main-data {
+        margin: 0px auto;
+    }
+
+    footer {
+        position: relative;
+    }
 }

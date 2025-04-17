@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,8 +35,10 @@
                 <h2>Hi , Welcome to my website</h2>
             </header>
 
-            <!-- Banner Content -->
-            <div class="banner-img"></div>
+            <!-- Banner Content* -->
+             <div class="banner-img">
+                <img src="assets/KotaMalam.jpg" alt="">
+             </div>
 
             <!-- Banner Text -->
             <article class="section-content">
@@ -43,17 +46,45 @@
             </article>
         </section>
 
+        <!-- Headquarter -->
+         <main class="headquarter">
+            <div class="headquarter-judul">
+                <h1>Our Headquarter</h1>
+            </div>
+            <div class="headquarter-kota">
+                <div class="bulat">
+                    <img src="assets/jakarta.jpg" alt="kota 1" width="100">
+                    <p>Jakarta</p>
+                </div>
+            </div>
+            <div class="headquarter-kota">
+                <div class="bulat">
+                    <img src="assets/bandung.jpg" alt="kota 1" width="100">
+                    <p>Bandung</p>
+                </div>
+            </div>
+            <div class="headquarter-kota">
+                <div class="bulat">
+                    <img src="assets/surabaya.jpg" alt="kota 1" width="100">
+                    <p>Surabaya</p>
+                </div>
+            </div>
+         </main>
+         <!-- Headquarter -->
+
         <hr />
 
         <!-- Our Profile Section -->
         <section id="our-profile-section">
             <header>
-                <h2>Our Profile</h2>
+                <h2>Profile Saya</h2>
             </header>
 
             <!-- Our Profile Text -->
             <article class="section-content">
-                <p>Welcome</p>
+                <p>Halo Perkenalkan saya Ucu Abdul Aziz, Saya Mahasiswa Universitas Galuh jurusan Ilmu Hukum</p>
+                <p>Disini saya mempunyai ketertarikan di bidang IT khususnya Web Depelopment. Seperti HTML, CSS dan JavaScript</p>
+                <p>Sekian profil singkat dari saya dan terima kasih</p>
             </article>
         </section>
 
@@ -80,7 +111,84 @@
             </header>
 
             <!-- Message Us Form -->
-            <form></form>
+            <form>
+                <div class="main-pesan">
+                    <div class="main-form">
+                      <form name="message-form" onsubmit="kirim(); return false">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td><label for="nama">Nama</label></td>
+                              <td>:
+                                <input type="text" name="nama" id="nama" required>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><label for="ttl">Tanggal Lahir</label></td>
+                              <td>:
+                                <input type="date" name="ttl" id="ttl" required>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><label for="gender">Jenis Kelamin</label></td>
+                              <td>:
+                                <input type="radio" name="gender" id="laki-laki" value="Laki-laki" required><label for="laki-laki">Laki-laki</label>
+                                <input type="radio" name="gender" id="perempuan" value="Perempuan" required><label for="perempuan">Perempuan</label>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="position: absolute;"><label for="pesan">Pesan</label></td>
+                              <td>
+                                <textarea name="pesan" id="pesan" cols="30" rows="5" required></textarea>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">
+                                <input type="submit" name="submit" value="Kirim">
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </form>
+                    </div>
+                    <div class="main-data">
+                      <table>
+                        <tbody>
+                          <tr class="td-waktu">
+                            <td><label for="waktu">Waktu</label></td>
+                            <td>
+                              <span id="waktu"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><label for="nama">Nama</label></td>
+                            <td>:
+                              <span id="nama2"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><label for="ttl">Tanggal Lahir</label></td>
+                            <td>:
+                              <span id="ttl2"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><label for="gender">Jenis Kelamin</label></td>
+                            <td>:
+                              <span id="gender2"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><label for="pesan">Pesan</label></td>
+                            <td>:
+                              <span id="pesan2"></span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>    
+            </form>
         </section>
     </main>
 
@@ -90,6 +198,9 @@
     <footer>
         <span>Made by </span>
     </footer>
+    
+    <!-- JS External -->
+    <script src="js\script.js"></script>
 </body>
 
 </html>
